@@ -1,0 +1,14 @@
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.deps.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.runtimeconfig.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.AssemblyInfo.cs
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\refint\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.genruntimeconfig.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\ref\Models.dll

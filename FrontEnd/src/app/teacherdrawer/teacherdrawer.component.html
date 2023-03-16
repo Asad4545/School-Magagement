@@ -1,0 +1,19 @@
+<button nz-button nzType="primary" (click)="openComponent()">Teacher Component </button>
+<br>
+<br>
+<button (click) = "GetTeacher()">GetData</button>
+
+<ul>
+    <div *ngFor="let Tch of allTeacher; index as i">
+        <p>{{Tch.name}}</p>
+        <p>{{Tch.email}}</p>
+        <p>{{Tch.gender}}</p>
+        <p>{{Tch.phone}}</p>
+        <button (click) ="EditTch(Tch)">Edit</button>
+
+        <button type="button" (click)="DeleteTeacher(Tch)">Delete</button>
+    </div>    
+</ul>
+
+
+  

@@ -20,7 +20,7 @@ namespace SchoolSystem.Controllers
         }
 
         [HttpPost("AddStudent")]
-        public Student AddUpdateStudent(Student student)
+        public Student AddUpdateStudent([FromForm] Student student)
         {
             return StdService.AddStudent(student);
         }
@@ -38,7 +38,7 @@ namespace SchoolSystem.Controllers
         }
 
         [HttpDelete ("DeleteStudent")]
-        public bool DeleteStudent(int id)
+        public bool DeleteStudent([FromQuery] int id)
         {
             return StdService.DeleteStudent(id);
         }

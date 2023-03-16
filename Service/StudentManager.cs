@@ -35,7 +35,7 @@ namespace Bussines
 
             bool StdCheck = dbObj.Students.Any(s => s.StudentId == student.StudentId);
 
-            if (StdCheck == true)
+            if (StdCheck)
             {
                 dbObj.Students.Update(student);
 

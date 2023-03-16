@@ -18,25 +18,25 @@ namespace SchoolSystem.Controllers
 
         }
 
-        [HttpPost ("Update Teacher")]
+        [HttpPost ("UpdateTeacher")]
         public Teacher AddTeacher(Teacher teacher)
         {
             return TchService.AddTeacher (teacher);
         }
 
-        [HttpGet ("Get Teacher")]
+        [HttpGet ("GetTeacher")]
         public Teacher GetTeacher(int id)
         {
             return TchService.getTeacher(id);
         }
 
-        [HttpGet ("Get All Teacher")]
+        [HttpGet ("AllTeacher")]
         public List<Teacher> AllTeacher()
         {
             return TchService.getAllTeacher();
         }
 
-        [HttpDelete ("Delete Teacher")]
+        [HttpDelete ("DeleteTeacher")]
         public bool DeleteTeacher(int id)
         {
             return TchService.DeleteTeacher(id);

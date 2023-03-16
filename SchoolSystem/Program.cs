@@ -1,6 +1,7 @@
 using Bussines.Interfaces;
 using Bussines;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,8 @@ builder.Services.AddScoped<ITeacherManager, TeacherManager>();
 builder.Services.AddScoped<IClasseManager, ClassManager>();
 builder.Services.AddScoped<IAttendance, AttendanceManager>();
 builder.Services.AddScoped<IFeeManager, FeeManager>();
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +27,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
 
 app.UseHttpsRedirection();
@@ -32,4 +36,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors(builder =>
+{
+    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+});
 app.Run();

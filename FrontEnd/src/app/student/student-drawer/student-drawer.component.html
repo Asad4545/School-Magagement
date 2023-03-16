@@ -1,0 +1,19 @@
+<button nz-button nzType="primary" (click)="openComponent()">Use Component </button>
+<br>
+<br>
+<button (click) = "GetStudent()">GetData</button>
+
+<ul>
+    <div *ngFor="let std of getObject; index as i">
+        <p>{{std.name}}</p>
+        <p>{{std.email}}</p>
+        <p>{{std.gender}}</p>
+        <p>{{std.phone}}</p>
+        <button (click) ="EditStd(std)">Edit</button>
+
+        <button type="button" (click)="DeleteStudent(std)">Delete</button>
+    </div>    
+</ul>
+
+
+  

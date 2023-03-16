@@ -16,5 +16,7 @@ namespace Models
         /*public double Amount_Id { get; set; }*/
 
         public Student? student { get; set; }
+
+
     }
 }

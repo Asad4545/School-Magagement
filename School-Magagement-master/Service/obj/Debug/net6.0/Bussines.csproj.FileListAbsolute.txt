@@ -1,0 +1,38 @@
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Bussines.deps.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Bussines.runtimeconfig.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Bussines.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Bussines.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Data.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Data.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\bin\Debug\net6.0\Models.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.csproj.AssemblyReference.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.GeneratedMSBuildEditorConfig.editorconfig
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.AssemblyInfoInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.AssemblyInfo.cs
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.csproj.CoreCompileInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.csproj.CopyComplete
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\refint\Bussines.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\Bussines.genruntimeconfig.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Service\obj\Debug\net6.0\ref\Bussines.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Bussines.deps.json
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Bussines.runtimeconfig.json
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Bussines.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Bussines.pdb
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Data.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Models.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Data.pdb
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\bin\Debug\net6.0\Models.pdb
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.AssemblyInfo.cs
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.csproj.CopyComplete
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\refint\Bussines.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.pdb
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\Bussines.genruntimeconfig.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\Service\obj\Debug\net6.0\ref\Bussines.dll

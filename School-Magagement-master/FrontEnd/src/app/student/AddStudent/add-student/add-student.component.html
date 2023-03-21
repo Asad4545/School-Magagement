@@ -1,0 +1,53 @@
+<h1>AddStudent</h1>
+
+<form [formGroup] ="myForm" (ngSubmit) ="SaveStudent()" >
+    
+    <div>
+        <label>Name:</label>
+        <input type="text" [formControlName]="'Name'" placeholder="Enter Name">
+    </div>
+
+    <div>
+        <label>ClassId:</label>
+        <input type="text" [formControlName]="'Id'" placeholder="Enter Class ID">
+    </div>
+
+    <div>
+        <label>Gender:</label>
+        <input type="text" [formControlName]="'Gender'" placeholder="Enter Gender">
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input type="text" [formControlName]="'Email'" placeholder="Enter Email">
+    </div>
+
+    <div>
+        <label>Password:</label>
+        <input type="password" [formControlName]="'Password'" placeholder="Enter Password">
+    </div>
+
+    <div>
+        <label>Date of Birth:</label>
+        <input type="date" [formControlName]="'DOB'" placeholder="Enter DOB">
+    </div>
+
+    <div>
+        <label>Phone:</label>
+        <input type="text" [formControlName]="'Phone'" placeholder="Enter Phone">
+    </div>
+
+    <button type="submit" >Save</button>
+
+    
+
+</form>
+
+
+
+
+
+<!-- <pre>{{getObject | json}}</pre> -->
+
+
+

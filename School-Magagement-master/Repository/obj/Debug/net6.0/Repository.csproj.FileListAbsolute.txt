@@ -1,0 +1,17 @@
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\bin\Debug\net6.0\Repository.deps.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\bin\Debug\net6.0\Repository.runtimeconfig.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\bin\Debug\net6.0\Repository.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\bin\Debug\net6.0\Repository.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\bin\Debug\net6.0\DomainLayer.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\bin\Debug\net6.0\DomainLayer.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\refint\Repository.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\Repository\obj\Debug\net6.0\ref\Repository.dll

@@ -1,0 +1,50 @@
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .nzCard{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1890ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  

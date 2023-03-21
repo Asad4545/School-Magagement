@@ -1,0 +1,28 @@
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.deps.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.runtimeconfig.json
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\bin\Debug\net6.0\Models.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.AssemblyInfo.cs
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\refint\Models.dll
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.pdb
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\Models.genruntimeconfig.cache
+D:\StallionsTechnologies\Internship\Dot Net Core\SchoolSystem\DomainLayer\obj\Debug\net6.0\ref\Models.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\bin\Debug\net6.0\Models.deps.json
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\bin\Debug\net6.0\Models.runtimeconfig.json
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\bin\Debug\net6.0\Models.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\bin\Debug\net6.0\Models.pdb
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\refint\Models.dll
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.pdb
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\Models.genruntimeconfig.cache
+C:\Users\ThinkPad\Downloads\Compressed\School-Magagement-master\School-Magagement-master\DomainLayer\obj\Debug\net6.0\ref\Models.dll

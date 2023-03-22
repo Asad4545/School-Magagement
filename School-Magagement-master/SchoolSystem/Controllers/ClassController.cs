@@ -20,14 +20,14 @@ namespace SchoolSystem.Controllers
         //ADD or UPDATE class
 
         [HttpPost("AddClass")]
-        public Classes AddClass(Classes classes)
+        public Classes AddClass([FromForm]Classes classes)
         {
             return ClasService.AddClass(classes);
         }
 
         //GET all Classes
 
-        [HttpGet ("All Classes")]
+        [HttpGet ("AllClasses")]
         public List<Classes> AllClasses()
         {
            return ClasService.getAllClasses();
@@ -42,7 +42,7 @@ namespace SchoolSystem.Controllers
         //DELETE Class
 
         [HttpDelete("DeleteClass")]
-        public bool DeleteClass(int id)
+        public bool DeleteClass([FromQuery]int id)
         {
             return ClasService.DeleteClass(id);
         }

@@ -1,34 +1,31 @@
 /* declarations: NzDrawerCustomComponent */
 
-import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, Input, TemplateRef, ViewChild } from '@angular/core';
 
 import { NzDrawerRef, NzDrawerService } from 'ng-zorro-antd/drawer';
-
-import { AddStudentComponent } from '../AddStudent/add-student/add-student.component';
-import { StudentService } from '../Services/student.service';
+import { AddClassComponent } from '../ClassComponent/add-class/add-class.component';
+import { ClassServiceService } from '../Service/class-service.service';
 
 @Component({
-  selector: 'app-student-drawer',
-  templateUrl: './student-drawer.component.html'
+  selector: 'app-class-drawer',
+  templateUrl: './class-drawer.component.html'
 })
-export class StudentDrawerComponent implements OnInit
-{
+export class ClassDrawerComponent {
   @ViewChild('drawerTemplate', { static: false }) drawerTemplate?: TemplateRef<{
     $implicit: { value: string };
     drawerRef: NzDrawerRef<string>;
   }>;
-  getObject: any[] =[];
   value = 'ng';
+  allClasses: any[] =[]
 
-  constructor(private drawerService: NzDrawerService, private StdService: StudentService) {}
+  constructor(private drawerService: NzDrawerService, private ClassService: ClassServiceService) {}
 
   openTemplate(): void {
     const drawerRef = this.drawerService.create({
       nzTitle: 'Template',
       nzFooter: 'Footer',
       nzExtra: 'Extra',
-      nzContent: StudentDrawerComponent,
+      nzContent: this.drawerTemplate,
       nzContentParams: {
         value: this.value
       }
@@ -44,11 +41,11 @@ export class StudentDrawerComponent implements OnInit
   }
 
   openComponent(): void {
-    const drawerRef = this.drawerService.create<AddStudentComponent, { value: string }, string>({
+    const drawerRef = this.drawerService.create<AddClassComponent, { value: string }, string>({
       nzTitle: 'Component',
       nzFooter: 'Footer',
       nzExtra: 'Extra',
-      nzContent: AddStudentComponent,
+      nzContent: AddClassComponent,
       nzContentParams: {
         value: this.value
       }
@@ -66,17 +63,17 @@ export class StudentDrawerComponent implements OnInit
     });
   }
 
-  EditStd(std: any): void {
-    const drawerRef = this.drawerService.create<AddStudentComponent, { value: string }, string>({
+  EditTch(Class: any): void {
+    const drawerRef = this.drawerService.create<AddClassComponent, { value: string }, string>({
       nzTitle: 'Component',
       nzFooter: 'Footer',
       nzExtra: 'Extra',
-      nzContent: AddStudentComponent,
+      nzContent: AddClassComponent,
       nzContentParams: {
-        value: std
+        value: Class
       }
     });
-    
+
     drawerRef.afterOpen.subscribe(() => {
       console.log('Drawer(Component) open');
     });
@@ -86,32 +83,18 @@ export class StudentDrawerComponent implements OnInit
       if (typeof data === 'string') {
         this.value = data;
       }
-      this.GetStudent()
-    });
+      });
+  }
+  
+  GetClasses(){
+    this.ClassService.GetClasses().subscribe((Response=>{
+      this.allClasses
+    }));
+
+  }
+
+  DeleteClass(){
     
-  }
-
-  ngOnInit(): void {
-      this.GetStudent()
-  }
-
-  GetStudent(){
-    this.StdService.GetStudent().subscribe((Response =>{
-      this.getObject = Response;
-      
-    }));
-  }  
-
-  DeleteStudent(std: any){
-    console.log("Component Parameter", std.studentId);
-    this.StdService.DeleteStudent(std.studentId).subscribe((Response =>{
-      console.log("Running")
-      this.GetStudent()
-    }));
-  }
-
-  Search(id: any){
-   this.getObject.filter(student=> student.studentId === id);
   }
 }
 

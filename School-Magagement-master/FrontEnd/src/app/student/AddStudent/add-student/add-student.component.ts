@@ -11,6 +11,7 @@ export class AddStudentComponent {
 
   @Input() value: any;
   myForm: FormGroup;
+  @Input() GetStudent!:()=>void
   StdService: StudentService;
 
   constructor(StdService: StudentService){
@@ -58,18 +59,24 @@ export class AddStudentComponent {
 
     }
 
-    this.StdService.SaveStudent(formData); 
+    this.StdService.SaveStudent(formData).subscribe((Response =>{
+      console.log(Response)
+      this.GetStudent()
+       })); 
   }
 
   ngOnInit(){
     console.log(this.value);
     this.myForm.get('Name')?.setValue(this.value.studentName);
-    this.myForm.get('Id')?.setValue(this.value.studentId);
+    this.myForm.get('Id')?.setValue(this.value.id);
     this.myForm.get('Email')?.setValue(this.value.email);
     this.myForm.get('Password')?.setValue(this.value.password);
     this.myForm.get('DOB')?.setValue(this.value.dob);
     this.myForm.get('Gender')?.setValue(this.value.gender);
     this.myForm.get('Phone')?.setValue(this.value.phone);
+
+    console.log(this.value.dob)
+
   }
 
   

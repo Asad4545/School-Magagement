@@ -1,1 +1,10 @@
 <h1>Classes</h1>
+
+<form [formGroup] ="myForm" (ngSubmit) ="AddClass()" >
+
+    <div>
+        <label>Class Name:</label>
+        <input type="text" [formControlName]="'Name'" placeholder="Enter Class Name">
+    </div>
+    <button type="submit" >Save</button>
+</form>

@@ -1,22 +1,24 @@
-<nz-card style="display: flex; flex-wrap: wrap;">
-    <button nz-button nzType="primary" (click)="openComponent()">Add Teacher </button>
-            <div nz-row>
-                <div *ngFor="let Tch of allTeacher; index as i" class="card" nz-col nzSpan="8">
-                    <nz-card style="margin:0px; margin-right: 250px; width: 250px;" class="nzCard">
-                        <span>
-                            <p><strong>Name:</strong> {{Tch.teacherName}}</p>
-                            <p><strong>Email:</strong> {{Tch.email}}</p>
-                            <p><strong>Gender:</strong> {{Tch.gender}}</p>
-                            <p><strong>Phone:</strong>{{Tch.phone}}</p>
-                        </span>
-                        <button nz-button nzType="primary" style="float: right;" (click)="EditTch(Tch)">Edit</button>
-                    <button nz-button nzType="primary" nzDanger (click)="DeleteTeacher(Tch)">Delete</button>
+<button nz-button nzType="primary" (click)="openComponent()">Add Teacher </button>
 
-                    </nz-card>
-                </div>
-            </div>
-</nz-card>
-
-
-
-<!-- style="margin: 10px; display: flex; flex-direction: column; align-items: center;" -->
+<nz-table style="width: 100%;" [nzData]= "allTeacher">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Gender</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let Tch of allTeacher">
+        <td >{{Tch.teacherName}}</td>
+        <td >{{Tch.email}}</td>
+        <td >{{Tch.gender}}</td>
+        <td>{{Tch.phone}}</td>
+        <td>
+            <button nz-button nzType="primary" style="float: right;" (click)="EditTch(Tch)">Edit</button>
+            <button nz-button nzType="primary" nzDanger (click)="DeleteTeacher(Tch)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { AddTeacherComponent } from './TeacherComponent/add-teacher/add-teacher.component';
 
+import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzDrawerService } from 'ng-zorro-antd/drawer';
@@ -25,6 +26,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     FormsModule,
+    NzTableModule,
     ReactiveFormsModule,
     NzCardModule,
     NzButtonModule,

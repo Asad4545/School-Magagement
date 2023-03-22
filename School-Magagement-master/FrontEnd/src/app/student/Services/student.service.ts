@@ -14,9 +14,7 @@ export class StudentService {
   }
 
   SaveStudent(formData: FormData){
-    this.http.post("https://localhost:7055/api/Student/AddStudent", formData).subscribe((Response =>{
-    console.log(Response)
-     }));
+    return this.http.post("https://localhost:7055/api/Student/AddStudent", formData)
   }
 
   GetStudent(){

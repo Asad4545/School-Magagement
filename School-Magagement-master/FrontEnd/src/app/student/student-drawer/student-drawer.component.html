@@ -1,25 +1,25 @@
-<nz-card>
-    <button nz-button nzType="primary" (click)="openComponent()">Add Student </button>
-<br>
-<br>
-<button nz-button nzType="primary" (click)="GetStudent()">Get Student </button>
+<nz-card style="display: flex; flex-wrap: wrap;">
 
-<ul>
-    <div *ngFor="let std of getObject; index as i">
-        <nz-card>
-            <span>
-                <p><strong>Name:</strong> {{std.studentName}}</p>
-                <p><strong>Email:</strong>{{std.email}}</p>
-                <p><strong>Gender:</strong>{{std.gender}}</p>
-                <p><strong>Phone:</strong>{{std.phone}}</p>
+    
+    <button nz-button nzType="primary" (click)="openComponent()">Add Student </button>
+
+    <div nz-row>
+        <div *ngFor="let std of getObject; index as i" class="card" nz-col nzSpan="8">
+            
+            <br>
+            <h2>Roll No: {{std.studentId}}</h2>
+            <nz-card style="margin:0px; border-color: skyblue; margin-right: 250px; width: 250px;" class="nzCard">
+                <span>
+                    <p><strong>Name:</strong> {{std.studentName}}</p>
+                    <p><strong>Email:</strong>{{std.email}}</p>
+                    <p><strong>Gender:</strong>{{std.gender}}</p>
+                    <p><strong>Phone:</strong>{{std.phone}}</p>
                 </span>
-        </nz-card>
-        <button nz-button nzType="primary" style="float: right;" (click)="EditStd(std)">Edit</button>
-        <button nz-button nzType="primary" nzDanger (click)="DeleteStudent(std)">Delete</button>
-        
-        
-    </div>    
-</ul>
+                <button nz-button nzType="primary" style="float: right;" (click)="EditStd(std)">Edit</button>
+            <button nz-button nzType="primary" nzDanger (click)="DeleteStudent(std)">Delete</button>
+            </nz-card>  
+        </div>    
+    </div>
 </nz-card>
 
 

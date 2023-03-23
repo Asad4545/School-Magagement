@@ -24,11 +24,12 @@ export class StudentDrawerComponent implements OnInit
   constructor(private drawerService: NzDrawerService, private StdService: StudentService) {}
 
   openTemplate(): void {
+    
     const drawerRef = this.drawerService.create({
       nzTitle: 'Template',
       nzFooter: 'Footer',
       nzExtra: 'Extra',
-      nzContent: StudentDrawerComponent,
+      nzContent: this.drawerTemplate,
       nzContentParams: {
         value: this.value
       }
@@ -110,9 +111,9 @@ export class StudentDrawerComponent implements OnInit
     }));
   }
 
-  Search(id: any){
-   this.getObject.filter(student=> student.studentId === id);
-  }
+  // Search(id: any){
+  //  this.getObject.filter(student=> student.studentId === id);
+  // }
 }
 
 

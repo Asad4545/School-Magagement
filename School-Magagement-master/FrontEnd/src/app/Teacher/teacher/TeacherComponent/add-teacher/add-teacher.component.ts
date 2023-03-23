@@ -70,7 +70,7 @@ export class AddTeacherComponent implements OnInit {
   ngOnInit(){
     console.log(this.value);
     this.myForm.get('Name')?.setValue(this.value.teacherName);
-    this.myForm.get('Id')?.setValue(this.value.teacherId);
+    this.myForm.get('Id')?.setValue(this.value.id);
     this.myForm.get('Email')?.setValue(this.value.email);
     this.myForm.get('Password')?.setValue(this.value.password);
     this.myForm.get('DOB')?.setValue(this.value.dob);

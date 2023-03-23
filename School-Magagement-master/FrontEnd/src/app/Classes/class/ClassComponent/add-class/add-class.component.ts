@@ -33,11 +33,12 @@ export class AddClassComponent implements OnInit {
     if(this.value.id == null)
     {
       console.log("InIF")
-    formData.append('Class Name', this.myForm?.get('Name')?.value);
+    formData.append('Class_Name', this.myForm?.get('Name')?.value);
     }
     else{
       console.log("InElse")
-      formData.append('Class Name', this.myForm?.get('Name')?.value);
+      formData.append('Class_Name', this.myForm?.get('Name')?.value);
+      formData.append('id', this.value.id)
     }
 
     this.ClassService.AddClass(formData).subscribe((Response=>{
@@ -49,7 +50,7 @@ export class AddClassComponent implements OnInit {
   ngOnInit(){
     console.log(this.value);
     this.myForm.get('Id')?.setValue(this.value.id);
-    this.myForm.get('Name')?.setValue(this.value.className);
+    this.myForm.get('Name')?.setValue(this.value.class_Name);
   }
 
 }

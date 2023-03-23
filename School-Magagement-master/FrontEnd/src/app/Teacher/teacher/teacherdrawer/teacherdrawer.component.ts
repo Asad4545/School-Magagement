@@ -4,8 +4,8 @@ import { Component, Input, TemplateRef, ViewChild } from '@angular/core';
 
 import { NzDrawerRef, NzDrawerService } from 'ng-zorro-antd/drawer';
 
-import { AddTeacherComponent} from '../Teacher/teacher/TeacherComponent/add-teacher/add-teacher.component';
-import { TeacherServiceService } from '../Teacher/teacher/Service/teacher-service.service';
+import { AddTeacherComponent} from '../TeacherComponent/add-teacher/add-teacher.component';
+import { TeacherServiceService } from '../Service/teacher-service.service';
 
 @Component({
   selector: 'app-teacherdrawer',

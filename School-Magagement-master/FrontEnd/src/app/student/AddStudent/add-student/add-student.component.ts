@@ -32,7 +32,7 @@ export class AddStudentComponent {
 
   SaveStudent(){
     const formData = new FormData();
-
+    
     console.log(this.value.studentId)
     console.log(this.value)
     if(this.value.studentId == null)
@@ -65,6 +65,7 @@ export class AddStudentComponent {
        })); 
   }
 
+  
   ngOnInit(){
     console.log(this.value);
     this.myForm.get('Name')?.setValue(this.value.studentName);
@@ -75,7 +76,7 @@ export class AddStudentComponent {
     this.myForm.get('Gender')?.setValue(this.value.gender);
     this.myForm.get('Phone')?.setValue(this.value.phone);
 
-    console.log(this.value.dob)
+    console.log(this.value.id)
 
   }
 

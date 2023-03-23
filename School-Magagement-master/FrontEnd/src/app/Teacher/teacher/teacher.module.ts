@@ -7,7 +7,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzDrawerService } from 'ng-zorro-antd/drawer';
-import { TeacherdrawerComponent } from 'src/app/teacherdrawer/teacherdrawer.component';
+import { TeacherdrawerComponent } from 'src/app/Teacher/teacher/teacherdrawer/teacherdrawer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzGridModule } from 'ng-zorro-antd/grid';

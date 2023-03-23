@@ -1,2 +1,21 @@
-    <button nz-button nzType="primary" (click)="openComponent()">Add Classses</button>
-  
+<button nz-button nzType="primary" (click)="openComponent()">Add Class </button>
+<!-- <button nz-button nzType="primary" (click)="GetClasses()">Get Class </button> -->
+
+<nz-table style="width: 100%;" [nzData]= "allClasses">
+    <thead>
+      <tr>
+        <th>Room No:</th>
+        <th>Class Name:</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let cla of allClasses">
+        <td>{{cla.id}}</td>
+        <td>{{cla.class_Name}}</td>
+        <td>
+            <button nz-button nzType="primary" style="float: right;" (click)="EditClass(cla)">Edit</button>
+            <button nz-button nzType="primary" nzDanger (click)="DeleteClass(cla)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

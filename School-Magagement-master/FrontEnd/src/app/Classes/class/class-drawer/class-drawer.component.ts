@@ -60,10 +60,11 @@ export class ClassDrawerComponent {
       if (typeof data === 'string') {
         this.value = data;
       }
+      this.GetClasses()
     });
   }
 
-  EditTch(Class: any): void {
+  EditClass(Class: any): void {
     const drawerRef = this.drawerService.create<AddClassComponent, { value: string }, string>({
       nzTitle: 'Component',
       nzFooter: 'Footer',
@@ -83,17 +84,28 @@ export class ClassDrawerComponent {
       if (typeof data === 'string') {
         this.value = data;
       }
-      });
+      this.GetClasses()
+    });
+  }
+
+  ngOnInit(){
+    this.GetClasses();
   }
   
   GetClasses(){
     this.ClassService.GetClasses().subscribe((Response=>{
-      this.allClasses
+      this.allClasses = Response;
+      console.log(this.allClasses)
     }));
 
   }
 
-  DeleteClass(){
+  DeleteClass(classId: any){
+    console.log(classId)
+    this.ClassService.DeleteClass(classId.id).subscribe((Response=>{
+      console.log(Response)
+      this.GetClasses()
+    }));
     
   }
 }

@@ -64,7 +64,7 @@ export class ClassDrawerComponent {
     });
   }
 
-  EditClass(Class: any): void {
+  EditClasses(Class: any): void {
     const drawerRef = this.drawerService.create<AddClassComponent, { value: string }, string>({
       nzTitle: 'Component',
       nzFooter: 'Footer',

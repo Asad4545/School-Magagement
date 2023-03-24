@@ -6,7 +6,9 @@ const routes: Routes = [
   { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) },
   { path: 'student', loadChildren: () => import('./student/student.module').then(m => m.StudentModule) },
   { path: 'teacher', loadChildren: () => import('./Teacher/teacher/teacher.module').then(m => m.TeacherModule) },
-  { path: 'class', loadChildren: () => import('./Classes/class/class.module').then(m => m.ClassModule) }
+  { path: 'class', loadChildren: () => import('./Classes/class/class.module').then(m => m.ClassModule) },
+  { path: 'SingleStudent', loadChildren: () => import('./SingleStudent/single-student.module').then(m => m.SingleStudentModule) }
+
 ];
 
 @NgModule({

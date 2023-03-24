@@ -29,13 +29,24 @@
           
         </ul>
       </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+
+      <div class="sidebar-logo">
+        <a routerLink="/SingleStudent">
+          <span nz-icon nzType="user-add" nzTheme="outline"></span>
+          <h1>Student</h1>
+        </a>
+          
+        
+      </div>
+      
+      
+      <!-- <li nz-submenu nzOpen nzTitle="Student" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
             <a>Basic Form</a>
           </li>
         </ul>
-      </li>
+      </li> -->
     </ul>
   </nz-sider>
   <nz-layout>
@@ -55,4 +66,6 @@
       </div>
     </nz-content>
   </nz-layout>
+  
 </nz-layout>
+

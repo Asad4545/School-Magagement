@@ -1,12 +1,18 @@
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.student-card {
+  margin-bottom: 20px;
 }
 
-.card {
-  margin: 10px;
+.card-title {
+  margin-bottom: 8px;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 16px;
 }

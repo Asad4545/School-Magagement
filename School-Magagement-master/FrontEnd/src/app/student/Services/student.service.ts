@@ -21,6 +21,12 @@ export class StudentService {
     return this.http.get<any[]>("https://localhost:7055/api/Student/GetAllStudent")
   }
 
+  GetSingleStudent(id: any){
+    console.log(id)
+    
+    return this.http.get(`https://localhost:7055/api/Student/GetStudent?id=${id}`)
+  }
+
   DeleteStudent(id: any){
     console.log("Service parameter", id)
     return this.http.delete(`https://localhost:7055/api/Student/DeleteStudent?id=${id}`)

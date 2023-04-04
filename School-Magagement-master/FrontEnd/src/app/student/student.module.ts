@@ -10,6 +10,7 @@ import { NzCardModule } from 'ng-zorro-antd/card';
 
 import { StudentDrawerComponent } from './student-drawer/student-drawer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ClassServiceService } from '../Classes/class/Service/class-service.service';
 
 
 const routes: Routes = [
@@ -32,6 +33,6 @@ const routes: Routes = [
     NzFormModule
   ],
   bootstrap: [StudentDrawerComponent],
-  providers: [NzDrawerService]
+  providers: [NzDrawerService, ClassServiceService]
 })
 export class StudentModule { }

@@ -26,7 +26,7 @@ namespace SchoolSystem.Controllers
         }
 
         [HttpGet ("GetStudent")]
-        public Student GetStudent(int id)
+        public Student GetStudent([FromQuery]int id)
         { 
             return StdService.getStudent(id);
         }
@@ -44,7 +44,7 @@ namespace SchoolSystem.Controllers
         }
 
         [HttpPost("Login")]
-        public bool Loginteacher(string email, string password)
+        public bool Loginteacher([FromForm]string email, [FromForm]string password)
         {
             return StdService.LoginStudent(email, password);
         }

@@ -18,25 +18,25 @@ namespace SchoolSystem.Controllers
 
         }
 
-        [HttpPost("Update Attendance")]
-        public StudenceAttendance AddAttendance(StudenceAttendance studenceAttendance)
+        [HttpPost("UpdateAttendance")]
+        public StudenceAttendance AddAttendance([FromQuery]StudenceAttendance studenceAttendance)
         {
             return AttService.AddStudentAtten(studenceAttendance);
         }
 
-        [HttpGet("Get Attendance")]
+        [HttpGet("GetAttendance")]
         public StudenceAttendance GetStudenceAtte(int id)
         {
             return AttService.getStudentAtten(id);
         }
 
-        [HttpGet("Get All Attendance")]
+        [HttpGet("GetAllAttendance")]
         public List<StudenceAttendance> AllAttendances()
         {
             return AttService.getAllStudentAtten();
         }
 
-        [HttpDelete("Delete Attendance")]
+        [HttpDelete("DeleteAttendance")]
         public bool DeleteAttendance(int id)
         {
             return AttService.DeleteStudentAtten(id);

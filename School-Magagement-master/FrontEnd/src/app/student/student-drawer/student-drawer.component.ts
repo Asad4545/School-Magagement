@@ -2,11 +2,13 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { AbstractControl, FormControl, FormGroup, ValidatorFn } from '@angular/forms';
 
 import { NzDrawerRef, NzDrawerService } from 'ng-zorro-antd/drawer';
 
 import { AddStudentComponent } from '../AddStudent/add-student/add-student.component';
 import { StudentService } from '../Services/student.service';
+
 
 @Component({
   selector: 'app-student-drawer',
@@ -20,8 +22,12 @@ export class StudentDrawerComponent implements OnInit
   }>;
   getObject: any[] =[];
   value = 'ng';
+  singleStudent: any
+  
 
-  constructor(private drawerService: NzDrawerService, private StdService: StudentService) {}
+  constructor(private drawerService: NzDrawerService, private StdService: StudentService) {
+    
+ }
 
   openTemplate(): void {
     
@@ -64,8 +70,22 @@ export class StudentDrawerComponent implements OnInit
       if (typeof data === 'string') {
         this.value = data;
       }
+      this.GetStudent()
     });
   }
+
+  GetStdIdValue(){
+    if (this.singleStudent === '') {
+      this.GetStudent()
+    }
+    else{
+      this.getObject = this.getObject.filter(x => {
+        const name = x.studentName.toLowerCase();
+        const search = this.singleStudent.toLowerCase();
+        return name.includes(search) || name.toUpperCase().includes(search.toUpperCase());
+      });
+    }
+}
 
   EditStd(std: any): void {
     const drawerRef = this.drawerService.create<AddStudentComponent, { value: string }, string>({
@@ -99,9 +119,17 @@ export class StudentDrawerComponent implements OnInit
   GetStudent(){
     this.StdService.GetStudent().subscribe((Response =>{
       this.getObject = Response;
-      
     }));
-  }  
+  } 
+  
+  GetSingleStudent(std: any){
+    console.log(std)
+    this.StdService.GetSingleStudent(std).subscribe((Response=>{
+      console.log(Response)
+
+      this.singleStudent = Response
+    }))
+  }
 
   DeleteStudent(std: any){
     console.log("Component Parameter", std.studentId);
@@ -110,6 +138,7 @@ export class StudentDrawerComponent implements OnInit
       this.GetStudent()
     }));
   }
+
 
   // Search(id: any){
   //  this.getObject.filter(student=> student.studentId === id);

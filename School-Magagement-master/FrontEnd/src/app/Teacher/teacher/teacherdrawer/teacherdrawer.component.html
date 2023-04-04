@@ -1,24 +1,32 @@
-<button nz-button nzType="primary" (click)="openComponent()">Add Teacher </button>
+<nz-row>
+  <nz-col nzSpan="24" nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+    <button nz-button nzType="primary" (click)="openComponent()">Add Teacher</button>
+  </nz-col>
+</nz-row>
 
-<nz-table style="width: 100%;" [nzData]= "allTeacher">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Username</th>
-        <th>Gender</th>
-        <th>Phone</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor= "let Tch of allTeacher">
-        <td >{{Tch.teacherName}}</td>
-        <td >{{Tch.email}}</td>
-        <td >{{Tch.gender}}</td>
-        <td>{{Tch.phone}}</td>
-        <td>
+<nz-row>
+  <nz-col nzSpan="24" nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+    <nz-table nzSize="middle" [nzData]="allTeacher">
+      <thead>
+        <tr>
+          <th nzWidth="15%">Name</th>
+          <th nzWidth="25%">Username</th>
+          <th nzWidth="25%">Gender</th>
+          <th nzWidth="15%">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let Tch of allTeacher">
+          <td>{{Tch.teacherName}}</td>
+          <td>{{Tch.email}}</td>
+          <td>{{Tch.gender}}</td>
+          <td>{{Tch.phone}}</td>
+          <td>
             <button nz-button nzType="primary" style="float: right;" (click)="EditTch(Tch)">Edit</button>
             <button nz-button nzType="primary" nzDanger (click)="DeleteTeacher(Tch)">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </nz-table>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-col>
+</nz-row>

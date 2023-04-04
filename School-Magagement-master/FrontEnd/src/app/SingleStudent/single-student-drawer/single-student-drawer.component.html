@@ -1,1 +1,60 @@
-<button nz-button nzType="primary" (click)="openComponent()">Mark Attendence</button>
+<!-- <nz-row>
+  <nz-col nzSpan="24" nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+    <button nz-button nzType="primary" (click)="GetAllStudent()">List of Students</button>
+  </nz-col>
+</nz-row>
+
+<nz-row>
+  <nz-col nzSpan="24" nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+    <nz-table nzSize="middle" [nzData]="AllStudent">
+      <thead>
+        <tr>
+          <th nzWidth="10%">Roll No</th>
+          <th nzWidth="15%">Name</th>
+          <th nzWidth="25%">Username</th>
+          <th nzWidth="25%">Gender</th>
+          <th nzWidth="15%">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let std of AllStudent">
+          <td>{{std.studentId}}</td>
+          <td>{{std.studentName}}</td>
+          <td>{{std.email}}</td>
+          <td>{{std.gender}}</td>
+          <td>{{std.phone}}</td>
+          <td>
+            <select [(ngModel)]="std.attendanceStatus">
+              <option value="present">Present</option>
+              <option value="absent">Absent</option>
+              <option value="late">Late</option>
+              </select>
+          </td>
+          <button (click)="MarkAttendance(std)">Save</button>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-col>
+</nz-row> -->
+
+<button nz-button nzType="primary" (click)="GetAllStudent()">List of Student</button>
+<br><br>
+<button nz-button nzType="primary" (click)="GetAllAttendance()">Get Attendance</button>
+<br>
+<br>
+<nz-col nzSpan="24" nzSm="12" nzMd="8" nzLg="9" *ngFor="let std of AllStudent; index as i">
+    <nz-card style="border-color: aqua;  margin-bottom: 20px; margin-right: 0px;" class="student-card">
+      <h2 class="card-title">Roll No: {{std.studentId}}</h2>
+      <div class="card-body">
+        <p><strong>Name:</strong> {{std.studentName}}</p>
+        <p><strong>Email:</strong> {{std.email}}</p>
+        <p><strong>Gender:</strong> {{std.gender}}</p>
+        <p><strong>Phone:</strong> {{std.phone}}</p>
+      </div>
+
+      <div class="card-footer"> 
+        <button nz-button nzType="primary" (click)="openComponent()">Mark Attendance</button>
+      </div>
+
+    </nz-card>
+  </nz-col>

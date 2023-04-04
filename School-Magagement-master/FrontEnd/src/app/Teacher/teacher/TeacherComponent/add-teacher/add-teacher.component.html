@@ -8,8 +8,12 @@
     </div>
 
     <div>
-        <label>ClassId:</label>
-        <input type="text" [formControlName]="'Id'" placeholder="Enter Class ID">
+        <label>Class:</label>
+        <select [formControlName]="'Id'">
+        <option *ngFor="let id of allClasses" [value]="id.id">
+            {{id.class_Name}}
+        </option>
+        </select>
     </div>
 
     <div>
@@ -20,11 +24,14 @@
     <div>
         <label>Email:</label>
         <input type="text" [formControlName]="'Email'" placeholder="Enter Email">
+        <div style="color: red;" *ngIf="myForm.get('Email')?.hasError('invalidEmail')">Email must end with '@stallion.com'
+        </div>
     </div>
 
     <div>
         <label>Password:</label>
         <input type="password" [formControlName]="'Password'" placeholder="Enter Password">
+        <div style="color: red;" *ngIf="myForm.get('Password')?.hasError('invalidPassword')">Password Must be at least 8 characters </div>
     </div>
 
     <div>
@@ -37,7 +44,8 @@
         <input type="text" [formControlName]="'Phone'" placeholder="Enter Phone">
     </div>
 
-    <button type="submit" >Save</button>
+    <button type="submit" (click)="ButtonValid()">Save</button>
+
 
     
 

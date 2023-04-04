@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 const routes: Routes = [
   { path: '', component: SingleStudentDrawerComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     FormsModule,
+    NzTableModule,
     ReactiveFormsModule,
     NzButtonModule,
     NzCardModule,

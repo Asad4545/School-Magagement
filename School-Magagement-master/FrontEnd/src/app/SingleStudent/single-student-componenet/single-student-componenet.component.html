@@ -1,1 +1,90 @@
-<h1>Attendence</h1>
+<h1>Attendance</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="StudentLogin()" >
+    
+    <div>
+        <label>Email:</label>
+        <input type="text" [formControlName]="'Email'" placeholder="Enter Email">
+    </div>
+
+    <div>
+        <label>Password:</label>
+        <input type="password" [formControlName]="'Password'" placeholder="Enter Password">
+    </div>
+
+    <br><br>
+    
+    <button type="submit"> Login</button>
+</form>
+
+<form [formGroup]="myFormAttend" (ngSubmit)="MarkAttendance(myFormAttend)">
+
+     <div>
+        <label>Roll NO: </label>
+        <input type="text" [formControlName]="'RollNo'">
+    </div>
+
+    <div>
+        <label>Date:</label>
+        <input type="date" [formControlName]="'Date'" >
+    </div>
+
+    <div>
+        <label>Attendance Status:</label>
+        <input type="text" [formControlName]="'AttenStatus'" >
+    </div>
+
+    <button (click)="MarkAttendance(myFormAttend)">Save</button>
+</form>  
+
+<!-- <form [formGroup] ="myForm" (ngSubmit) ="MarkAttendence()" >
+    
+    <div>
+        <label>Roll No:</label>
+        <input type="text" [formControlName]="'Name'" placeholder="Enter Name"> 
+        <div *ngIf="myForm.controls['Name']?.hasError('required')" class="required">Name is required.</div>
+    </div>
+
+    <div>
+        <label>Class:</label>
+        <select [formControlName]="'Id'">
+        <option *ngFor="let id of allClasses" [value]="id.id">
+            {{id.class_Name}}
+        </option>
+        </select>
+    </div>
+
+    <div>
+        <label>Gender:</label>
+        <input type="text" [formControlName]="'Gender'" placeholder="Enter Gender">
+    </div>
+
+    <div>
+        <label>Email:</label>
+        <input type="text" [formControlName]="'Email'" placeholder="Enter Email">
+        <div style="color: red;" *ngIf="myForm.get('Email')?.hasError('invalidEmail')">Email must end with '@stallion.com'
+        </div>
+    </div>
+
+    <div>
+        <label>Password:</label>
+        <input type="password" [formControlName]="'Password'" placeholder="Enter Password">
+        <div style="color: red;" *ngIf="myForm.get('Password')?.hasError('invalidPassword')">Password Must be at least 8 characters </div>
+    </div>
+
+    <div>
+        <label>Date of Birth:</label>
+        <input type="date" [formControlName]="'DOB'" placeholder="Enter DOB">
+    </div>
+
+    <div>
+        <label>Phone:</label>
+        <input type="text" [formControlName]="'Phone'" placeholder="Enter Phone">
+    </div>
+
+    <button type="submit" [disabled]="!myForm.valid">Save</button>
+    {{myForm.valid}}
+</form> -->
+
+
+
